@@ -1,4 +1,4 @@
-##OWF Widget Load Tool
+##OWF Widget Load Tool (owf-widget-load)
 This is a command-line script used to load widget and dashboard definitions 
 into OWF from data in a CSV file.  Will assign widgets and dashboards to groups if the 
 data is provided. Uses HTTPS against a running OWF server.
