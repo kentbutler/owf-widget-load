@@ -1,0 +1,58 @@
+POST https://localhost:8443/owf/widget
+
+_method	POST
+
+data	[{"id":"","name":"TestWidget","version":"1","url":"http://finance.yahoo.com/","headerIcon":"http://l.yimg.com/bt/api/res/1.2/FLd7Fu4.rR6146sXO8snoA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE0MztxPTg1O3c9MTkw/http://l.yimg.com/os/284/2011/09/26/950usmap_151731.jpg","image":"http://l.yimg.com/bt/api/res/1.2/FLd7Fu4.rR6146sXO8snoA--/YXBwaWQ9eW5ld3M7Zmk9ZmlsbDtoPTE0MztxPTg1O3c9MTkw/http://l.yimg.com/os/284/2011/09/26/950usmap_151731.jpg","width":"500","height":"500","widgetGuid":"f0741698-8dfb-a37e-df49-8ec8539a1e78","maximized":"","minimized":"","x":"","y":"","visible":"on","definitionVisible":"","background":"","editable":"","tags":[{"name":"tag1","visible":true,"position":-1,"editable":true}],"singleton":"on","allRequired":"","directRequired":"","userId":"","userRealName":"","totalUsers":"","totalGroups":"","widgetTypes":[{"id":1,"name":"standard"}]}]
+
+dojo.preventCache	1332949934034
+
+owfversion	4.0.0-BETA1
+
+
+---------------------------------------------
+-- Look up Groups by group name
+
+POST https://localhost:8443/owf/group
+
+_method	GET
+dojo.preventCache	1332950718612
+max	50
+offset	0
+order	ASC
+owfversion	4.0.0-BETA1
+sort	name
+
+
+
+{"data":[
+   {"totalUsers":2,"id":4,"totalWidgets":2,"name":"TestGroup1","status":"active","tagLinks"
+:[],"description":"TestGroup1","email":"testgroup1@group1.com","automatic":false},
+   {"totalUsers":1,"id":8,"totalWidgets":
+1,"name":"group1","status":"active","tagLinks":[],"description":"I am a sample Group 1 from users.properties","email":"t
+est@email.com","automatic":true}
+   ],
+  "results":2}
+
+
+---------------------------------------------
+-- Add a Group to a Widget
+
+POST https://localhost:8443/owf/widget
+
+_method	PUT
+data	[{"id":8,
+          "name":"group1",
+          "description":"I am a sample Group 1 from users.properties",
+          "totalWidgets":1,
+          "totalUsers":1,
+          "automatic":true,
+          "status":"active"}]
+dojo.preventCache	1332957144340
+owfversion	4.0.0-BETA1
+tab	groups
+update_action	add
+widget_id	3e1036df-00f7-6585-ddb4-2ceb76eab0ce
+
+
+
+

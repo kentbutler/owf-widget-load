@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ISO8601}: %-5p [%c][%t] %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="FILE" class="org.apache.log4j.CompositeRollingAppender">
+		<param name="RollingStyle" value="3" />
+		<param name="StaticLogFileName" value="false" />
+		<param name="File" value="widgetLoader.log" />
+		<param name="CountDirection" value="1" />
+		<param name="MaxFileSize" value="10MB" />
+		<param name="MaxSizeRollBackups" value="-1" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="Encoding" value="UTF-8" />
+		<!--
+			Uncomment these parameters to boost performance but entries won't get
+			written immediately
+			 
+		<param name="BufferedIO" value="false"/>
+		<param name="BufferSize" value="8192"/>
+		-->
+		<!--
+			Set to immediate flush so the results are saved before a system
+			crash, slows performance though
+		-->
+		<param name="ImmediateFlush" value="true" />
+		<param name="Threshold" value="all" />
+		<layout class="org.apache.log4j.EnhancedPatternLayout">
+			<param name="ConversionPattern" value="%d{ISO8601}{UTC} %-5p [%c] %m%n" />
+		</layout>
+<!--
+		<filter class="org.apache.log4j.varia.StringMatchFilter">
+			<param name="StringToMatch" value="/images/" />
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+		<filter class="org.apache.log4j.varia.StringMatchFilter">
+			<param name="StringToMatch" value="/css/" />
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+		<filter class="org.apache.log4j.varia.StringMatchFilter">
+			<param name="StringToMatch" value="/js/" />
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+		<filter class="org.apache.log4j.varia.StringMatchFilter">
+			<param name="StringToMatch" value="/js-lib/" />
+			<param name="AcceptOnMatch" value="false" />
+		</filter>
+-->
+	</appender>
+
+	<appender name="async" class="org.apache.log4j.AsyncAppender">
+		<appender-ref ref="stdout" />
+		<appender-ref ref="FILE" />
+	</appender>
+	
+
+	<logger name="groovy" additivity="false">
+		<level value="debug" />
+		<appender-ref ref="async" />
+	</logger>
+
+	<logger name="org.apache.http" additivity="false">
+		<level value="info" />
+		<appender-ref ref="async" />
+	</logger>
+
+	<logger name="org.apache.http.wire" additivity="false">
+		<level value="info" />
+		<appender-ref ref="async" />
+	</logger>
+
+
+	<root>
+		<level value="trace" />
+		<appender-ref ref="async" />
+	</root>
+
+</log4j:configuration>

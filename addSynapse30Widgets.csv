@@ -1,0 +1,10 @@
+#displayName,widgetUrl,imageUrl,imageUrlSmall,width,height,singleton(true|false),background(true|false),visible(true|false),WIDGET_GUID ,WIDGET_VERSION ,UNIVERSAL_NAME ,DESCRIPTOR_URL ,DESCRIPTION ,assign,assignName,
+Synapse Services, /synapse-owf-service, /synapse-owf-service/images/s3_service.png, /synapse-owf-service/images/sm_gear.png,200,200,TRUE,TRUE,TRUE,,1.0,Synapse Services,,,groups,OWF Administrators,OWF Users
+Quickstart Query, /quickstart/query.jsp, /quickstart/images/s3_quickstart_query.png, /quickstart/images/sm_gear.png,300,300,FALSE,FALSE,TRUE,,1.0,Quickstart Query,,,groups,OWF Administrators,OWF Users
+Quickstart Visualization, /quickstart/visualization.jsp, /quickstart/images/s3_quickstart_visual.png, /quickstart/images/sm_gear.png,300,300,FALSE,FALSE,TRUE,,1.0,Quickstart Visualization,,,groups,OWF Administrators,OWF Users
+Data Manager, /datamanager/index.jsp, /datamanager/images/s3_data_manager.png, /datamanager/images/s3_data_manager.png,200,600,FALSE,FALSE,TRUE,,1.0,Data Manager,,,groups,OWF Administrators,OWF Users
+Mapping Test, /mapping-test/, /mapping-test/images/s3_mapping_test.png, /mapping-test/images/sm_gear.png,300,300,FALSE,FALSE,TRUE,,1.0,Mapping Test,,,groups,OWF Administrators,OWF Users
+Syn Map, /synmap/index.jsp, /synmap/images/s3_map.png, /synmap/images/s3_map.png,800,800,FALSE,FALSE,TRUE,,1.0,Syn Map,,,groups,OWF Administrators,OWF Users
+Wits Query, /witsquery/index.jsp, /witsquery/images/s3_wits_query.png, /witsquery/images/s3_wits_query.png,700,500,FALSE,FALSE,TRUE,,1.0,Wits Query,,,groups,OWF Administrators,OWF Users
+Timewheel, /timewheel/index.jsp, /timewheel/images/s3_timewheel.png, /timewheel/images/s3_timewheel.png,600,600,FALSE,FALSE,TRUE,,1.0,Timewheel,,,groups,OWF Administrators,OWF Users
+WorkingSet Browser, /workingsetbrowser/index.jsp, /workingsetbrowser/images/s3_ws_browser.png, /workingsetbrowser/images/s3_ws_browser.png,300,500,FALSE,FALSE,TRUE,,1.0,WorkingSet Browser,,,groups,OWF Administrators,OWF Users

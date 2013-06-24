@@ -1,0 +1,22 @@
+#displayName,widgetUrl,imageUrl,imageUrlSmall,width,height,singleton(true|false),background(true|false),visible(true|false),WIDGET_GUID ,WIDGET_VERSION ,UNIVERSAL_NAME ,DESCRIPTOR_URL ,DESCRIPTION ,assign,assignName,
+ASAM Query, /asam-query-widget, /asam-query-widget/images/widget_icon.png, /asam-query-widget/images/widget_icon.png,700,350,FALSE,FALSE,TRUE,,1.0,ASAM Query,,,groups,OWF Administrators,OWF Users
+Calendar, /calendar-widget, /calendar-widget/images/widget_icon.png, /calendar-widget/images/widget_icon.png,750,600,FALSE,FALSE,TRUE,,1.0,Calendar,,,groups,OWF Administrators,OWF Users
+Category Filter, /category-filter-widget, /category-filter-widget/images/widget_icon.png, /category-filter-widget/images/widget_icon.png,318,425,FALSE,FALSE,TRUE,,1.0,Category Filter,,,groups,OWF Administrators,OWF Users
+Chart, /chart-widget, /chart-widget/images/widget_icon.png, /chart-widget/images/widget_icon.png,750,550,FALSE,FALSE,TRUE,,1.0,Chart,,,groups,OWF Administrators,OWF Users
+CSV Import, /csv-import-widget, /csv-import-widget/images/widget_icon.pg, /csv-import-widget/images/widget_icon.pg,950,500,FALSE,FALSE,TRUE,,1.0,CSV Import,,,groups,OWF Administrators,OWF Users
+Data Generator, /data-generator, /data-generator/images/widget_icon.png, /data-generator/images/widget_icon.png,665,350,FALSE,FALSE,TRUE,,1.0,Data Generator,,,groups,OWF Administrators,OWF Users
+Desktop Search, /desktop-search-widget, /desktop-search-widget/images/widget_icon.png, /desktop-search-widget/images/widget_icon.png,418,300,FALSE,FALSE,TRUE,,1.0,Desktop Search,,,groups,OWF Administrators,OWF Users
+Encoding Control, /encoding-control-widget, /encoding-control-widget/images/widget_icon.png, /encoding-control-widget/images/widget_icon.png,525,500,FALSE,FALSE,TRUE,,1.0,Encoding Control,,,groups,OWF Administrators,OWF Users
+Faceting Filter, /faceting-filter-widget, /faceting-filter-widget/images/widget_icon.png, /faceting-filter-widget/images/widget_icon.png,725,650,FALSE,FALSE,TRUE,,1.0,Faceting Filter,,,groups,OWF Administrators,OWF Users
+Map, /map-widget, /map-widget/images/widget_icon.png, /map-widget/images/widget_icon.png,744,592,FALSE,FALSE,TRUE,,1.0,Map,,,groups,OWF Administrators,OWF Users
+Help, /help-widget, /help-widget/images/widget_icon.png, /help-widget/images/widget_icon.png,400,400,FALSE,FALSE,TRUE,,1.0,Help,,,groups,OWF Administrators,OWF Users
+Recordset Browser, /recordset-browser-widget, /recordset-browser-widget/images/widget_icon.png, /recordset-browser-widget/images/widget_icon.png,700,520,FALSE,FALSE,TRUE,,1.0,Recordset Browser,,,groups,OWF Administrators,OWF Users
+Record Viewer, /record-viewer-widget, /record-viewer-widget/images/widget_icon.png, /record-viewer-widget/images/widget_icon.png,700,520,FALSE,FALSE,TRUE,,1.0,Record Viewer,,,groups,OWF Administrators,OWF Users
+Scatterplot, /scatterplot -widget, /scatterplot -widget/images/widget_icon.png, /scatterplot -widget/images/widget_icon.png,800,550,FALSE,FALSE,TRUE,,1.0,Scatterplot,,,groups,OWF Administrators,OWF Users
+Tag Cloud, /tag-cloud-widget, /tag-cloud-widget/images/widget_icon.png, /tag-cloud-widget/images/widget_icon.png,700,400,FALSE,FALSE,TRUE,,1.0,Tag Cloud,,,groups,OWF Administrators,OWF Users
+Time Filter, /time-filter-widget, /time-filter-widget /images/widget_icon.png, /time-filter-widget /images/widget_icon.png,625,459,FALSE,FALSE,TRUE,,1.0,Time Filter,,,groups,OWF Administrators,OWF Users
+Time Line, /timeline-widget, /timeline-widget/images/widget_icon.png, /timeline-widget/images/widget_icon.png,900,350,FALSE,FALSE,TRUE,,1.0,Time Line,,,groups,OWF Administrators,OWF Users
+Time Wheel, /timewheel-widget, /timewheel-widget/images/widget_icon.png, /timewheel-widget/images/widget_icon.png,775,600,FALSE,FALSE,TRUE,,1.0,Time Wheel,,,groups,OWF Administrators,OWF Users
+Value List, /value-list-widget, /value-list-widget/images/widget_icon.png, /value-list-widget/images/widget_icon.png,200,400,FALSE,FALSE,TRUE,,1.0,Value List,,,groups,OWF Administrators,OWF Users
+WITS Query Widget, /wits-query-widget, /wits-query-widget/images/widget_icon.png, /wits-query-widget/images/widget_icon.png,700,400,FALSE,FALSE,TRUE,,1.0,WITS Query Widget,,,groups,OWF Administrators,OWF Users
+Workspace, /workspace-widget, /workspace-widget/images/widget_icon.png, /workspace-widget/images/widget_icon.png,280,425,FALSE,FALSE,TRUE,,1.0,Workspace,,,groups,OWF Administrators,OWF Users
