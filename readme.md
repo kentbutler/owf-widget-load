@@ -1,7 +1,6 @@
 ##OWF Widget Load Tool (owf-widget-load)
 This is a command-line script used to load widget and dashboard definitions 
-into OWF from data in a CSV file.  Will assign widgets and dashboards to groups if the 
-data is provided. Uses HTTPS against a running OWF server.
+into [OWF](https://github.com/ozoneplatform/owf/) from data in a CSV file.  Will assign widgets and dashboards to groups if the data is provided. Uses HTTPS against a running OWF server.
 
 *__Compatibility__*: OWF 6, 7.x,
 
@@ -10,12 +9,12 @@ data is provided. Uses HTTPS against a running OWF server.
 * A valid p12 certificate of an OWF administrator for logging into the server
 * The server's JKS keystore for validation of the server's certificate
 
-__TODO__: 
+*__TODO__:* 
 * Assignment by user is not currently implemented.
 * Upload of Stack definitions
 
-__Last UpDate__: 21 Jun 2013
-__author__: kent.butler@nextcentury.com
+*__Last update__*: 21 Jun 2013
+*__Author__*: kent.butler@nextcentury.com
 
 
 ###Quick Start
@@ -39,7 +38,7 @@ __author__: kent.butler@nextcentury.com
 * testServerConnection.bat  -- only tests the connection to the server, does not load widgets
 
 
-#### Tool Usage Detail
+#### Tool CLI Usage
 
 It is easiest to use one of the existing scripts and modify it, but FYI here is the tool command-line interface:
 
@@ -99,4 +98,8 @@ The Dashboard CSV data file requires the following fields, and may include a hea
         DASH_DEFINITION   4    JSON string defining the dashboard; normally copied out of existing OWF
         DASH_ASSIGN_BY    5    current must be 'groups'
         DASH_ASSIGN       6    comma-separated list of groups to assign to -- FUTURE could be usernames
+
+### License
+
+Released under Apache License 2.0.
 
