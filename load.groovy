@@ -602,7 +602,6 @@ import net.sf.ezmorph.Morpher;
       return ids
   }
 
-If a stack is deleted by an administrator, the user will no longer have a copy of the stack and the dashboards and widgets included in the stack.
   def String assignDashByGroup (int lineNum, List names, String guid) {
       def ids = loadGroups(names)
 
